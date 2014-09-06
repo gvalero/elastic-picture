@@ -1,0 +1,26 @@
+defaults: &defaults
+  adapter: mysql
+  username: root
+  password: root
+
+development:
+  database: elastic_picture_development
+  <<: *defaults
+
+  # Add more repositories
+  # repositories:
+  #   repo1:
+  #     adapter:  postgres
+  #     database: sample_development
+  #     username: the_user
+  #     password: secrets
+  #     host:     localhost
+  #   repo2:
+  #     ...
+
+test:
+  database: elastic_picture_test
+  <<: *defaults
+production:
+  database: elastic_picture_production
+  <<: *defaults

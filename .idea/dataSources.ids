@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails elastic_picture: development" uuid="7ac372ee-9669-41d7-8c32-0b7f524e833b">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails elastic_picture: test" uuid="8f4adcb4-266e-43a4-8f04-0de3b1c2cd6d">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails elastic_picture: production" uuid="808fc860-9326-4d38-9990-c169598f8220">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
