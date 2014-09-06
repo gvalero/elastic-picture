@@ -94,6 +94,9 @@ GEM
       railties (>= 3.1.0, < 5.0)
       thor (~> 0.14)
     json (1.8.1)
+    kaminari (0.15.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -164,6 +167,7 @@ DEPENDENCIES
   dm-types (~> 1.2.0)
   dm-validations (~> 1.2.0)
   jquery-rails (~> 2.0.1)
+  kaminari
   railties (~> 3.2.14)
   sass-rails (~> 3.2.5)
   turn (~> 0.9.4)

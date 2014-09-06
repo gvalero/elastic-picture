@@ -4,6 +4,7 @@ RAILS_VERSION = '~> 3.2.14'
 DM_VERSION    = '~> 1.2.0'
 
 gem 'dm-paperclip'
+gem 'kaminari'
 gem 'activesupport',  RAILS_VERSION, :require => 'active_support'
 gem 'actionpack',     RAILS_VERSION, :require => 'action_pack'
 gem 'actionmailer',   RAILS_VERSION, :require => 'action_mailer'

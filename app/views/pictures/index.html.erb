@@ -1,18 +1,24 @@
+
 <h1>Listing pictures</h1>
 
 <table>
   <tr>
     <th>Title</th>
     <th>Descr</th>
+    <th>Image Big</th>
+    <th>Image Med</th>
+    <th>Image Small</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
-
 <% @pictures.each do |picture| %>
   <tr>
     <td><%= picture.title %></td>
     <td><%= picture.descr %></td>
+    <td><%= image_tag picture.image.url %></td>
+    <td><%= image_tag picture.image.url(:medium) %></td>
+    <td><%= image_tag picture.image.url(:thumb) %></td>
     <td><%= link_to 'Show', picture %></td>
     <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
     <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -21,5 +27,5 @@
 </table>
 
 <br />
-
+<%= paginate @pictures%>
 <%= link_to 'New Picture', new_picture_path %>
