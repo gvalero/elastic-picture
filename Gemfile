@@ -38,6 +38,7 @@ gem 'dm-transactions', DM_VERSION
 gem 'dm-aggregates',   DM_VERSION
 gem 'dm-timestamps',   DM_VERSION
 gem 'dm-observer',     DM_VERSION
+gem 'dm-serializer',   DM_VERSION
 
 # Gems used only for assets and not required
 # in production environments by default.

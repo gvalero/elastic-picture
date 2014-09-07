@@ -9,3 +9,6 @@ class Comment
   property :descr, Text
 
 end
+
+DataMapper.setup(:default, 'mysql://root:root@localhost/elastic_picture_development')
+DataMapper.auto_upgrade!

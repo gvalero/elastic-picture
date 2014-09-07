@@ -14,6 +14,7 @@ class PicturesController < ApplicationController
   # GET /pictures/1.json
   def show
     @picture = Picture.get(params[:id])
+    @comment = @picture.comments.new
 
     respond_to do |format|
       format.html # show.html.erb
