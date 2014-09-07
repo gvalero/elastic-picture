@@ -3,6 +3,7 @@ class Picture
   include DataMapper::Resource
   include Paperclip::Resource
 
+  has n, :comments
   property :id, Serial
 
   property :title,  String,   :required => true

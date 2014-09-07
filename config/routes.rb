@@ -1,5 +1,7 @@
 ElasticPicture::Application.routes.draw do
-  resources :pictures
+  resources :pictures, :only => [:new, :create, :show, :index] do
+    resources :comments, :only => [:new, :create, :index]
+  end
 
   
   # The priority is based upon order of creation:

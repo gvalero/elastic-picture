@@ -81,5 +81,3 @@ class PicturesController < ApplicationController
     end
   end
 end
-
-DataMapper.finalize
