@@ -15,8 +15,7 @@ class CommentsController < ApplicationController
     @comments = @picture.comments
 
     respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @comments }
+      format.html {  render :layout => !request.xhr? }
     end
   end
 

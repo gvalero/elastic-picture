@@ -12,7 +12,10 @@
   <%= image_tag @picture.image.url(:medium) %>
 </p>
 
-<%= link_to 'Show comments', picture_comments_path(@picture), :remote => true, class: 'show_comment'%>
-<%= link_to 'Comment', new_picture_comment_path(@picture) %>
+<div class="comments">
+<%= link_to 'Show comments', picture_comments_path(@picture), :remote => true, "data-type" => :html, class: 'show_comments'%>
+</div>
+
+<%= render partial: 'comments/form'%>
 
 <%= link_to 'Back', pictures_path %>

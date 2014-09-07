@@ -43,7 +43,7 @@ gem 'dm-observer',     DM_VERSION
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.5'
-  gem 'coffee-rails', '~> 3.2.2'
+  #gem 'coffee-rails', '~> 3.2.2'
   gem 'uglifier',     '~> 1.2.4'
 end
 
