@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 RAILS_VERSION = '~> 3.2.14'
 DM_VERSION    = '~> 1.2.0'
@@ -46,6 +46,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.5'
   #gem 'coffee-rails', '~> 3.2.2'
   gem 'uglifier',     '~> 1.2.4'
+  gem 'therubyracer'
 end
 
 gem 'jquery-rails', '~> 2.0.1'
@@ -67,3 +68,5 @@ group :test, :development do
   gem 'turn', '~> 0.9.4', :require => false
 
 end
+gem 'rubber'
+gem 'open4'
