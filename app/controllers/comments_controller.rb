@@ -1,15 +1,16 @@
 class CommentsController < ApplicationController
-  # GET /picture/:id/comments
-  # GET /picture/:id/comments.json
   before_filter :load_picture
 
+  # load the picture for all the methods.
   def load_picture
     @picture = Picture.get(params[:picture_id])
     if(!@picture)
       redirect_to '/'
-end
+    end
   end
 
+  # GET /picture/:id/comments
+  # GET /picture/:id/comments.json
   def index
     @comments = @picture.comments
 
