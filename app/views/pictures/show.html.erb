@@ -12,6 +12,7 @@
   <%= image_tag @picture.image.url(:medium) %>
 </p>
 
+<%= link_to 'Show comments', picture_comments_path(@picture), :remote => true, class: 'show_comment'%>
 <%= link_to 'Comment', new_picture_comment_path(@picture) %>
 
 <%= link_to 'Back', pictures_path %>
