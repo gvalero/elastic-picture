@@ -67,3 +67,5 @@ group :test, :development do
   gem 'turn', '~> 0.9.4', :require => false
 
 end
+
+gem 'foundation-rails'
