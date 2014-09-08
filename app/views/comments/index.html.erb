@@ -2,16 +2,15 @@
 
 <table>
   <tr>
+    <th>Id</th>
     <th>Title</th>
     <th>Descr</th>
     <th>Picture</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @comments.each do |comment| %>
   <tr>
+    <td><%= comment.id %></td> <!--For debugging pourposes -->
     <td><%= comment.title %></td>
     <td><%= comment.descr %></td>
     <td><%= comment.picture %></td>
