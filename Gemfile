@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 RAILS_VERSION = '~> 3.2.14'
 DM_VERSION    = '~> 1.2.0'
@@ -68,5 +68,7 @@ group :test, :development do
   gem 'turn', '~> 0.9.4', :require => false
 
 end
+
+gem 'foundation-rails'
 gem 'rubber'
 gem 'open4'
