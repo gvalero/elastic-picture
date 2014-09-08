@@ -12,14 +12,11 @@ class Comment
   after :create, :to_elastic
 
   def to_elastic
-    begin
-      response = RestClient.put (ENV['BONSAI_URL'] || "http://localhost:9200/challenge/comments/#{self.id}") , self.to_json(only: [:title, :descr, :picture_id]), :content_type => :json, :accept => :json
+    response = RestClient.put "#{(ENV['BONSAI_URL'] || 'http://localhost:9200')}/challenge/comments/#{self.id}" , self.to_json(only: [:title, :descr, :picture_id]), :content_type => :json, :accept => :json
       if !response.code.between? 200, 299
         throw :halt
       end
-    rescue
-      puts (ENV['BONSAI_URL'] || "http://localhost:9200/challenge/comments/#{self.id}")
-    end
+
   end
 
 
