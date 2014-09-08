@@ -17,3 +17,8 @@
 
 /.idea/elastic_picture.iml
 /.idea/workspace.xml
+
+/.idea/dataSources.xml
+
+/heroku
+/heroku.pub
