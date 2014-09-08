@@ -15,5 +15,5 @@ class Picture
   has_attached_file :image, :styles => {:medium => "300x300", :thumb => "100x100"}
 end
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || 'mysql://user:password@hostname/database')
+DataMapper.setup(:default, ENV['DATABASE_URL'] || 'mysql://root:root@localhost/elastic_picture_development')
 DataMapper.auto_upgrade!
