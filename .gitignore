@@ -14,3 +14,6 @@
 /log/*.log
 /tmp
 /public/system/images
+
+/.idea/elastic_picture.iml
+/.idea/workspace.xml
