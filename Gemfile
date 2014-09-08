@@ -70,6 +70,4 @@ group :test, :development do
 end
 
 gem 'foundation-rails'
-gem 'rubber'
-gem 'open4'
 gem 'rest-client', '~> 1.7.2'
